@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Help Is On the Way</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Help Is On the Way Survey</h1>
+        <p id="description">Life is tough. Seeking help is a big step. Let's get started.</p>
+    </header>
+
+    <form id="survey-form">
+        <div>
+            <label for="name" class="form-label" id="name-label">Name</label>
+            <input id="name" type="text" name="name" class="form-field" placeholder="Enter your name" required>
+        </div>  
+
+        <div>
+            <label for="email" class="form-label" id="email-label">Email</label>
+            <input id="email" type="email" name="email" class="form-field" placeholder="youremail@domain.com" required>
+        </div>
+
+        <div>
+            <label for="number" class="form-label" id="number-label">Age<span>(optional)</span></label>
+            <input id="number" type="number" name="age" min="10" max="100" class="form-field" placeholder="Enter Your Age">
+        </div>
+
+        <div>
+            <label for="dropdown" class="form-label">Where are you located?</label>
+            <select class="form-field" id="dropdown" name="location" required>
+                <option disabled selected value>Select Region</option>
+                <option value="NJ-N">New Jersey - North</option>
+                <option value="NJ-C">New Jersey - Central</option>
+                <option value="NJ-S">New Jersey - South</option>
+                <option value="NY-B">New York - Brooklyn</option>
+                <option value="NY-BX">New York - The Bronx</option>
+                <option value="NY-M">New York - Manhattan</option>
+                <option value="NY-S">New York - Staten Island</option>
+                <option value="NY-Q">New York - Queens</option>
+                <option value="CT">Connecticut</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <fieldset class="form-group-radio">
+            <legend>In which setting would you prefer to talk?</legend>
+                
+                <label for="in-person">
+                    <input name="preference" value="In person" type="radio" id="in-person" class="input-radio">
+                    In person
+                </label>
+                
+                <label for="virtually">
+                    <input name="preference" value="Virtually" type="radio" id="virtually" class="input-radio">
+                    Virtually
+                </label>
+        </fieldset>
+        
+        <fieldset id="checkbox">
+            <legend>What is your personal situation? Check all areas that apply to you.</legend>
+
+            <div class="checkbox-grid">
+                <label for="alcohol">
+                    <input name="personal-situation" value="Increased-alcohol-intake" type="checkbox" id="alcohol" class="input-checkbox">
+                        Increased alcohol intake
+                </label>
+            
+                <label for="abuse">
+                    <input
+                    name="personal-situation" value="target-of-domestic-abuse" type="checkbox" id="abuse" class="input-checkbox">
+                        Target of domestic abuse
+                </label>
+                        
+                <label for="covid">
+                    <input
+                    name="personal-situation" value="suffering-from-long-covid" type="checkbox" id="covid" class="input-checkbox">
+                        Suffering from long covid
+                </label>
+            </div>
+            
+            <div class="checkbox-grid">
+                <label for="target">
+                    <input
+                    name="personal-situation" value="victim-of-hate-crime-or-racial-injustice" type="checkbox" id="target" class="input-checkbox">
+                        Target of hate crime or racial injustice
+                </label>
+                
+                <label for="loss">
+                    <input
+                    name="personal-situation" value="dealing-with-loss-of-loved-one" type="checkbox" id="loss" class="input-checkbox">
+                    Dealing with loss of a loved one
+                </label>
+            
+                <label for="social">
+                    <input
+                    name="personal-situation" value="social-media-induced-anxiety-depression-or-loneliness" type="checkbox" id="social" class="input-checkbox">
+                    Social media induced anxiety or depression
+                </label>
+            </div>
+
+            <div class="checkbox-grid">
+                <label for="caretaker">
+                    <input name="personal-situation" value="caretaker" id="caretaker" type="checkbox" class="input-checkbox">
+                    Caretaker
+                </label>
+
+                <label for="employment">
+                    <input
+                    name="personal-situation" value="unemployment-or-underemployment" type="checkbox" id="employment" class="input-checkbox">
+                    Unemployment or underemployment
+                </label>
+
+                <label for="refugee">
+                    <input
+                    name="personal-situation" value="Refugee-immigrant" type="checkbox" id="refugee" class="input-checkbox">
+                    Refugee or Immigrant
+                </label>
+            </div>
+        </fieldset>
+
+        <div>
+            <p class="form-label"> If you have any areas of concern not covered by the above options, please type them below. <b>Judgement free zone</b>.</p>
+            <textarea id="comments" name="comments" class="form-textarea" placeholder="Tell us about circumstances. Even if you can only list feelings, let us know..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+
+
+</body>
